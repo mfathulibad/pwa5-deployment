@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  pwa5_frontend:
+    build:
+      context: /frontend  # Ganti dengan path yang benar ke direktori frontend
+      dockerfile: Dockerfile  # Ganti dengan nama Dockerfile frontend yang benar
+    ports:
+      - "21054:3000"  # Ganti port sesuai dengan port yang digunakan oleh aplikasi React jika diperlukan
+
+  pwa5_backend:
+    build:
+      context: /backend  # Ganti dengan path yang benar ke direktori frontend
+      dockerfile: Dockerfile  # Ganti dengan nama Dockerfile frontend yang benar
+    ports:
+      - "21053:3100"  # Ganti port sesuai dengan port yang digunakan oleh aplikasi Node.js jika diperlukan
+    environment:
+      - NODE_ENV=production  # Atur environment variables yang diperlukan oleh backend jika ada
+    depends_on:
+      - pwa5_postgres  # Menjadikan layanan backend bergantung pada layanan PostgreSQL
+
+  pwa5_postgres:
+    image: postgres:latest
+    ports:
+      - "21051:5432"  # Port PostgreSQL
+    environment:
+      - POSTGRES_DB=lectureProfile
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pwa5_070702
+    volumes:
+      - pwa5_postgres_data:/var/lib/postgresql/data  # Volume untuk menyimpan data PostgreSQL
+
+  pwa5_pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "21052:80"  # Port PgAdmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=pwa5@webdev.ac.id
+      - PGADMIN_DEFAULT_PASSWORD=pwa5_070702
+    depends_on:
+      - pwa5_postgres  # Menjadikan layanan PgAdmin bergantung pada layanan PostgreSQL
+
+volumes:
+  pwa5_postgres_data:
