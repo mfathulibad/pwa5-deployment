@@ -1,0 +1,263 @@
+.margin-class{
+    margin-top: 110px;
+}
+.my-jumbotron {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                url("https://e-learning.polban.ac.id/pluginfile.php/1/theme_lambda/carousel_image_11/1618326726/PASCA.jpg");
+    height: 600px;
+    width: 100%; /* Mengatur lebar jumbotron ke 100% */
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center; /* Memposisikan gambar latar belakang ke tengah */
+  }
+  
+  .my-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+  
+  .my-content h4 {
+    color: #FF7F00;
+  }
+  
+  .my-content h1 {
+    color: #00008B;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .portfolio-mf {
+    background: #f8f9fa;
+    padding: 60px 0;
+  }
+
+  .title-a {
+    color: #000; /* Warna teks hitam */
+    font-size: 36px; /* Ukuran font judul */
+    font-weight: bold; /* Teks tebal */
+    text-transform: uppercase; /* Huruf kapital semua */
+    letter-spacing: 2px; /* Jarak antar huruf */
+  }
+  
+  .subtitle-a {
+    color: #555; /* Warna teks abu-abu gelap */
+    font-size: 18px; /* Ukuran font subjudul */
+  }
+  
+  .line-mf {
+    width: 80px; /* Lebar garis pemisah */
+    height: 3px; /* Tinggi garis pemisah */
+    background-color: #FF7F00; /* Warna garis pemisah */
+    margin: 20px auto; /* Marginsa tengah */
+  }
+  
+  .dosen-box {
+    height: 100%;
+    text-align: center;
+  }
+
+  .dosen-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan saat hover */
+    transform: scale(1.05); /* Memperbesar kartu saat hover */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animasi transisi saat hover */
+  }
+  
+  
+  .dosen-img {
+    text-align: center;
+  }
+  
+  .w-title {
+    font-size: 17px;
+  }
+  
+  .w-ctegory {
+    font-size: 14px;
+    color: #FF7F00;
+  }
+  
+  .w-date {
+    font-size: 14px;
+  }
+  
+  .w-like {
+    text-align: right;
+  }
+  
+  .w-like a {
+    color: #FF7F00;
+  }
+  
+  .w-like a:hover {
+    color: #000;
+  }
+
+/*--------------------------------------------------------------
+# Counter
+--------------------------------------------------------------*/
+.counter-box {
+    margin-top: 40px;
+    height: 300px;
+    color: #0000;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak kolom */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 577px) {
+    .counter-box {
+      margin-bottom: 1.8rem;
+    }
+  }
+  
+  .ico-circle {
+    height: 80px;
+    width: 80px;
+    background-color: #cde1f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 10px #cde1f8;
+  }
+
+  .counter {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: black; /* Mengatur warna teks menjadi hitam */
+    background-color: #00008B;
+  }
+
+  .counter-number {
+    margin-top: 25px;
+    font-size: 25px;
+    color: #00008B; /* Warna teks hitam */
+    display: block; 
+    white-space: pre; 
+  }
+
+  .counter-text {
+    color: #000; /* Warna teks hitam */
+    display: block; 
+    white-space: pre; 
+  }
+
+  /* footer.css */
+  
+  .map {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .contact-info {
+    color: white;
+  }
+
+  /*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+@media (min-width: 767px) {
+    .card-blog {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .card-blog .card-body {
+    position: relative;
+  }
+  
+  .card-blog .card-category-box {
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    line-height: 25px;
+    overflow: hidden;
+  }
+  
+  .card-blog .card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #FF7F00;
+    border-radius: 4px;
+  }
+  
+  .card-blog .card-category .category {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+  }
+  
+  .card-blog .card-title {
+    font-size: 1.0rem;
+    margin-top: 0.6rem;
+  }
+  
+  .card-blog .card-description {
+    color: #4e4e4e;
+  }
+  
+  .card-blog .post-author {
+    display: inline-block;
+    display: block; /* Membuat teks berada dalam blok terpisah */
+    white-space: pre;
+  }
+  
+  .card-blog .post-date {
+    color: #4e4e4e;
+    display: inline-block;
+    /* float: right; */
+  }
+
+
+    /*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+  
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+#sidebar-wrapper{
+  min-height: 100vh !important;
+  width: 100vw;
+  margin-left: -1rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+  
+  
+  
+
+
